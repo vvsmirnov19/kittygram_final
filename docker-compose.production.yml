@@ -27,7 +27,6 @@ services:
       - static:/static
   gateway:
     image: valsmirnov/kittygram_gateway
-    env_file: .env
     ports:
       - 9000:80
     volumes:
