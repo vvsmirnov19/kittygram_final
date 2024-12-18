@@ -16,7 +16,7 @@ services:
     env_file: .env
     volumes:
       - static:/static
-      - media:/media
+      - media:/media/
     depends_on:
       - db
   frontend:
@@ -27,10 +27,9 @@ services:
       - static:/static
   gateway:
     image: valsmirnov/kittygram_gateway
+    env_file: .env
     ports:
       - 9000:80
     volumes:
       - static:/static
-      - media:/media
-    depends_on:
-      - backend
+      - media:/media/
