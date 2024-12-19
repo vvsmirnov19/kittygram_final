@@ -43,7 +43,7 @@ docker compose up -d
 docker compose -f docker-compose.production.yml up -d
 ```
 
-Автор [Валерий Смирнов] (https://github.com/vvsmirnov19)
+Автор [Валерий Смирнов](https://github.com/vvsmirnov19)
 
 #  Как работать с репозиторием финального задания
 
